@@ -71,6 +71,7 @@ def winner(board)
       return win_combination
       win_combo = []
       win_combo << win_combination
+    end
 
   if won?(board) == true
     win_combination.each | i |
