@@ -58,12 +58,14 @@ end
 
 def winner(board)
 
-  if won?(board) == true
-        win_combination.each | i |
-    if i == "X"
-          puts "X"
-    else i == "O"
-          puts "O"
-    end
+  winner = won?(board)
+
+  if winner === false
+    return nil
+  elsif board[winner[0]] == "X"
+    return "X"
+  else 
+    board[winner[0]] == "O"
+    return "O"
   end
 end
