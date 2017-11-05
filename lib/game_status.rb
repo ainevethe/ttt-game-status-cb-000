@@ -38,4 +38,5 @@ end
 def full?(board)
 
     return board.include?(" ") ? false : true
+    
 end
