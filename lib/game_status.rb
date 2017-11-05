@@ -58,14 +58,14 @@ end
 
 def winner(board)
 
-  winner = won?(board)
+  winning = won?(board)
 
-  if winner === false
+  if winning === false
     return nil
-  elsif board[winner[0]] == "X"
+  elsif board[winning[0]] == "X"
     return "X"
   else
-    board[winner[0]] == "O"
+    board[winning[0]] == "O"
     return "O"
   end
 end
