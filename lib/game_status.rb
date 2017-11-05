@@ -60,6 +60,11 @@ end
 def winner(board)
 
   if won?(board) == true
-
-
+    @win_combo.each | i |
+    if i == "X"
+      puts "X"
+    else i == "O"
+      puts "O"
+    end
+  end
 end
